@@ -1,0 +1,25 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:universal_windows_scrobbler.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="universal_windows_scrobbler.Views.SessionView"
+             x:DataType="vm:SessionViewModel"
+             >
+    <StackPanel>
+        <TextBlock Text="{Binding Title}"></TextBlock>
+        <TextBlock Text="{Binding Artist}"></TextBlock>
+        <TextBlock Text="{Binding Album}"></TextBlock>
+        <TextBlock Text="{Binding Genres}"></TextBlock>
+        <TextBlock Text="{Binding Subtitle}"></TextBlock>
+        <TextBlock Text="{Binding AlbumArtist}"></TextBlock>
+        <TextBlock Text="{Binding TrackNumber}"></TextBlock>
+        <TextBlock Text="{Binding TrackCount}"></TextBlock>
+        <TextBlock Text="{Binding PlaybackType}"></TextBlock>
+        <TextBlock Text="{Binding PlaybackStatus}"></TextBlock>
+        <TextBlock Text="{Binding Position}"></TextBlock>
+        <TextBlock Text="{Binding StartTime}"></TextBlock>
+        <TextBlock Text="{Binding EndTime}"></TextBlock>
+    </StackPanel>
+</UserControl>

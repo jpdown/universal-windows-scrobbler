@@ -18,6 +18,7 @@
     <StackPanel>
         <TextBlock Text="{Binding Title}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBlock Text="Current Song" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ListBox ItemsSource="{Binding Sessions}"></ListBox>
     </StackPanel>
 
 </Window>

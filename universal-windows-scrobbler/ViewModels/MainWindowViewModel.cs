@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Tmds.DBus.Protocol;
 using universal_windows_scrobbler.Models;
 
@@ -14,10 +15,16 @@ public partial class MainWindowViewModel : ViewModelBase
     
     private MediaSession _mediaSession; 
     
+    public ObservableCollection<SessionViewModel> Sessions { get; } = [];
+    
     public MainWindowViewModel()
     {
         _mediaSession = new MediaSession();
         _mediaSession.SongTitleChanged += MediaSessionOnSongTitleChanged;
+        Sessions.Add(new SessionViewModel());
+        Sessions.Add(new SessionViewModel());
+        Sessions.Add(new SessionViewModel());
+        Sessions.Add(new SessionViewModel());
     }
 
     private void MediaSessionOnSongTitleChanged(MediaSession sender, string title)

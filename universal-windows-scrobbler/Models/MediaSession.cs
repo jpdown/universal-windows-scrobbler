@@ -61,10 +61,12 @@ public class MediaSession
 
     private void SessionOnTimelinePropertiesChanged(GlobalSystemMediaTransportControlsSession sender, TimelinePropertiesChangedEventArgs args)
     {
+        var timelineProperties = sender.GetTimelineProperties();
     }
 
     private void SessionOnPlaybackInfoChanged(GlobalSystemMediaTransportControlsSession sender, PlaybackInfoChangedEventArgs args)
     {
+        var playbackInfo = sender.GetPlaybackInfo();
     }
 
     private async void SessionOnMediaPropertiesChanged(GlobalSystemMediaTransportControlsSession sender, MediaPropertiesChangedEventArgs args)
