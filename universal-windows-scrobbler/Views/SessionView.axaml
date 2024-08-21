@@ -8,10 +8,11 @@
              x:DataType="vm:SessionViewModel"
              >
     <StackPanel>
+        <TextBlock Text="{Binding SessionName}"></TextBlock>
         <TextBlock Text="{Binding Title}"></TextBlock>
         <TextBlock Text="{Binding Artist}"></TextBlock>
         <TextBlock Text="{Binding Album}"></TextBlock>
-        <TextBlock Text="{Binding Genres}"></TextBlock>
+        <!-- <ListBox Items="{Binding Genres}"></ListBox> -->
         <TextBlock Text="{Binding Subtitle}"></TextBlock>
         <TextBlock Text="{Binding AlbumArtist}"></TextBlock>
         <TextBlock Text="{Binding TrackNumber}"></TextBlock>
